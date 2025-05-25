@@ -1,6 +1,6 @@
-# Project Title
+# Luigi
 
-A brief description of what this project does.
+A swift CLI wrapper over llama-server!
 
 ## Installation
 
@@ -36,11 +36,9 @@ If you need to build `llama.cpp`, follow these steps:
 
 ## Usage
 
-[Instructions on how to use the project]
-
-## Subscriptions
-
-[Details about any subscription models or services related to this project]
+```bash
+LLAMA_SERVER_PATH=./llama.cpp/build/bin/llama-server .build/debug/LlamaCLI --hf bartowski/Qwen_Qwen3-0.6B-GGUF:Q4_K_M --c 2048
+```
 
 ## Contributing
 
