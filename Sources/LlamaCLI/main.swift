@@ -22,9 +22,9 @@ struct LlamaCLI: ParsableCommand {
     // You will need to adjust these based on how your 'llama-server' binary
     // actually accepts its command-line arguments.
     // For example, if llama-server expects '--model-path' instead of '--model':
-    private var modelArgName: String = "--model" // Placeholder: e.g., "--model", "--model-path"
+    private var modelArgName: String = "--hf-repo" // Placeholder: e.g., "--model", "--model-path"
     // And if '-c' corresponds to '--threads' or '--context-length':
-    private var cValueArgName: String = "--threads" // Placeholder: e.g., "--threads", "--context-size", "-n"
+    private var cValueArgName: String = "--ctx-size" // Placeholder: e.g., "--threads", "--context-size", "-n"
 
     private func findLlamaServerPath() throws -> String {
         // Priority for finding 'llama-server':
